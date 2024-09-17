@@ -1,0 +1,20 @@
+{
+  "name": "e-commerce-fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "cd ./backend && npm install && cd .. && cd ./frontend && npm install",
+    "lint": "cd ./backend && npm run lint && cd .. && cd ./frontend && npm run lint",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm run dev\"",
+    "test": "cd ./backend && npm run test && cd .. && cd ./frontend && npm run test",
+    "build": "cd ./backend && npm run build && cd .. && cd ./frontend && npm run build",
+    "docker:build": "cd ./backend && npm run docker:build"
+  },
+  "keywords": [],
+  "author": "Anthony Gress",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
