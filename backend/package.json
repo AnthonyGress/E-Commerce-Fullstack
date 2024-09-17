@@ -11,9 +11,7 @@
     "docker:build": "docker build --no-cache -t ecommerce-backend .",
     "dev": "nodemon index.ts"
   },
-  "keywords": [],
   "author": "Anthony Gress",
-  "license": "ISC",
   "mocha": {
     "watch-files": [
       "src/**/**",

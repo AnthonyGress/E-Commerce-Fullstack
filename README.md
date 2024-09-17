@@ -13,7 +13,7 @@ From the root directory, you can run all commands for both the backend and the f
 <img width="1280" alt="ecommerce-home" src="https://github.com/user-attachments/assets/bac3f5bd-be5e-4a2e-90f6-dff97b08ebe7">
 <img width="1280" alt="ecommerce-shop" src="https://github.com/user-attachments/assets/a8d732c0-5b3d-4ba7-84d2-167b10751111">
 
-## Backend
+# Backend
 
 Technologies:
 - Node.js
@@ -57,7 +57,7 @@ npm run dev
 
 <img width="731" alt="infrastructure" src="https://github.com/user-attachments/assets/71f57765-acd7-422c-8547-51460e07b4f6">
 
-## Frontend
+# Frontend
 
 Technologies:
 - Typescript
