@@ -55,7 +55,42 @@ npm run dev
 | DATABASE_PASSWORD | N/A | password to your database |
 | WHITELIST_ORIGINS | N/A | list of domains which have access to the API via CORS |
 
+# Architecture
+
 <img width="731" alt="infrastructure" src="https://github.com/user-attachments/assets/71f57765-acd7-422c-8547-51460e07b4f6">
+
+## Database Design
+
+### product table
+| type      | property  |    
+|-------|----------------|
+| PK uuid  | id |
+| text | name | 
+| text | description | 
+| enum | category | 
+| text | vendor | 
+| bigint | price | 
+| bigint | quantity | 
+
+### order table
+| type      | property  |    
+|-------|----------------|
+| PK uuid  | id |
+| bigint | amount | 
+| enum | order_status | 
+| text array | order_items | 
+| text | account_id | 
+| text | tracking_company | 
+| text | tracking_number | 
+
+### order_items table
+| type      | property  |    
+|-------|----------------|
+| PK uuid  | id |
+| FK(product.id) text | product | 
+| bigint | price | 
+| bigint | quantity | 
+
 
 # Frontend
 
